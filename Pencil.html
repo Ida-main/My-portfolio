@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "pencil" content = "pencil and drawings">
+        <title> Paintings drawings </title>
+        
+        <link href="style.css" rel = "stylesheet" type = "text/css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    </head>
+    <body>
+        <h1> Pencil Drawings </h1>
+        
+        <a href="index.html">
+        <div class = "button">
+            <p> Home </p>
+        </div>
+        </a>
+        
+        <div class = "section">
+            <div class="row">
+                <div class= "column">
+                    <img src = "cartoon/CartoonLuke.jpg" alt="Man" style = "width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src = "pencil/pencilsera.jpg" alt="Sera" style = "width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src = "pencil/PencilJoel.jpg" alt="Joelandellie" style = "width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src = "pencil/Pencilanne.jpg" alt="Anne" style = "width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src = "pencil/penicl1.jpg" alt="Anne" style = "width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+            </div>
+           
+             <!-- modal -->
+            <div id="myModal" class = "modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    
+                    <!-- modal images-->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 18</div>
+                        <img src="cartoon/CartoonLuke.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 18</div>
+                        <img src="pencil/pencilsera.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 18</div>
+                        <img src="pencil/PencilJoel.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 18</div>
+                        <img src="pencil/Pencilanne.jpg" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    
+                    <!-- modal images -->
+                    <div class="column">
+                        <img class="demo cursor" src="pencil/penicl1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Tiger head pencil sketch.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="pencil/pencilsera.jpg" style="width:100%" onclick="currentSlide(2)" alt="Beach environment oil painting on canvas.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="pencil/PencilJoel.jpg" style="width:100%" onclick="currentSlide(3)" alt="Rainbow Ocean rocks gouache painting.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="pencil/Pencilanne.jpg" style="width:100%" onclick="currentSlide(4)" alt="Girl playing violin oil on canvas.">
+                    </div>
+                    
+                </div>
+            </div>
+<script src="modalGalleryScript.js"></script>
+        </div>
+    </body>
+
+</html>

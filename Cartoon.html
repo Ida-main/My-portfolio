@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "digital paintings" content = "Digital Paintings">
+        <title> Cartoon Drawings </title>
+        
+        <link href="style.css" rel = "stylesheet" type = "text/css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    </head>
+    <body>
+        <h1> Cartoon </h1>
+        
+        <a href="index.html">
+        <div class = "button">
+            <p> Home </p>
+        </div>
+        </a>
+        
+        <div class = "section">
+            <div class="row">
+                <div class= "column">
+                    <img src = "cartoon/egg.jpg" alt="egg" style = "width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src = "cartoon/cartoon.jpg" alt="Fight shera" style = "width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src = "cartoon/cartoon1.jpg" alt="Scorpia shera" style = "width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                    <div class= "column">
+                    <img src = "cartoon/cartoon3.jpg" alt="shera hetero" style = "width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                    <div class= "column">
+                     <img src = "cartoon/carttooon.jpg" alt="cheeta" style = "width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+             <!-- modal -->
+            <div id="myModal" class = "modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    
+                    <!-- modal images-->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="cartoon/egg.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="cartoon/cartoon.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="cartoon/cartoon1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="cartoon/cartoon3.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="cartoon/carttooon.jpg" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    
+                    <!-- modal images -->
+                    <div class="column">
+                        <img class="demo cursor" src="cartoon/egg.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cloud study painted in Krita. Referenced from a screen cap of one of Jonna Jinton's videos on YouTube.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="cartoon/cartoon.jpg" style="width:100%" onclick="currentSlide(2)" alt="Fanart from Spirited Away painted in Photoshop.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="cartoon/cartoon1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Cloud study painted in Krita. Reference photo taken in Atlanta.">
+                    </div>
+                     <div class="column">
+                        <img class="demo cursor" src="cartoon/carttooon.jpg" style="width:100%" onclick="currentSlide(4)" alt="Manatee painted in Krita. Reference photo taken at Odense Zoo.">
+                    </div>
+                </div>
+            </div>
+<script src="modalGalleryScript.js"></script>
+            
+        </div>
+    </body>
+
+</html>
