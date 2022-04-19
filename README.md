@@ -2,4 +2,4 @@
 
 Just a small portfolio I made!
 
-link here: 
+link here: https://ida-main.github.io/My-portfolio/
